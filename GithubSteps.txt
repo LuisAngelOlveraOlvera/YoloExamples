@@ -1,0 +1,9 @@
+git config --global email
+git config --global "user"
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/LuisAngelOlveraOlvera/TEST.git
+git push -u origin main
+rm -rf .git

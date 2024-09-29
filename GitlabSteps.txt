@@ -1,0 +1,31 @@
+cd existing_repo
+git config --global email
+git config --global "user"
+
+git remote add origin https://gitlab.com/LuisAngelOlvera/test.git
+git branch -M main
+git push -uf origin main
+
+
+# Configuración inicial (si no lo has hecho)
+git config --global user.email "tu_correo@ejemplo.com"
+git config --global user.name "Tu Nombre"
+
+# Crear un nuevo repositorio local
+git init
+
+# Agregar un archivo
+git add README.md
+
+# Commit de los cambios
+git commit -m "Primer commit"
+
+# Crear una nueva rama (opcional)
+git branch mi-nueva-rama
+git checkout mi-nueva-rama
+
+# Agregar el repositorio remoto de GitLab
+git remote add origin https://gitlab.com/tu_usuario/tu_proyecto.git
+
+# Pulsar los cambios a la rama remota
+git push -u origin mi-nueva-rama
